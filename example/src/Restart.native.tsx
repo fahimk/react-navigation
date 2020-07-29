@@ -1,11 +1,5 @@
-import RNRestart from 'react-native-restart';
-import { Updates } from 'expo';
+import * as Updates from 'expo-updates';
 
 export function restartApp() {
-  // @ts-ignore
-  if (global.Expo) {
-    Updates.reloadFromCache();
-  } else {
-    RNRestart.Restart();
-  }
+  Updates.reloadAsync();
 }
