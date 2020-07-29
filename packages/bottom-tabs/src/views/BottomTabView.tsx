@@ -132,6 +132,7 @@ export default class BottomTabView extends React.Component<Props, State> {
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: 'row',
     flex: 1,
     overflow: 'hidden',
   },
